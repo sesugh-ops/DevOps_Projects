@@ -12,3 +12,15 @@
 **GIT**
 ![git](./images/git.png)
 
+## *TOOL THREE*
+**Linux Environment**
+![mint](./images/linux-environment.png)
+
+## *TOOL FOUR*
+**AWS account**
+![aws](./images/aws-account.png)
+
+
+## TOOL FIVE
+**Github Account**
+![github](./images/github.png)
