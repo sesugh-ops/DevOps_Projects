@@ -19,7 +19,19 @@
 <br/>
 
 ## STEP TWO 
-*User*
+*User John made changes to navigation bar and made a pull request which got approved and merged*
+![update](./images/update-navigation-merge.png)
 
+*The new changes to the website on the navigation bar*
+![changes](./images/new%20navigation%20bar.png)
+
+<br/>
+
+## STEP THREE
+*User Jerry made changes to the footer and made a pull request which got apporved*
+![footer](./images/add-contact-merged.png)
+
+*The new changes to the footer on the webpage*
+![new](./images/new%20footer.png)
 
 
