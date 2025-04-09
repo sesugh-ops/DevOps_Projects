@@ -4,6 +4,9 @@
 ---
 <br/>
 
+## HOW THE WEBSITE LOOKS
+![website](./images/website%20look.png)
+
 ## WORKFLOW OF THE COLLABORATION
 *Two users TOM and JERRY working simultaeneoulsy with two different branches*
 
