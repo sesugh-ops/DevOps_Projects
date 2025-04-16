@@ -1,2 +1,2 @@
 # DevOps Projects
-This repository contains  DevOps projects implemented on Darey.io
+This repository contains  DevOps projects implemented on Darey.io Learning platform
