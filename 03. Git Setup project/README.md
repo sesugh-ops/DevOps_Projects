@@ -22,3 +22,8 @@
 
 5. Commited changes pushed to github main branch
 ![main](./images/changes%20pushed%20to%20origin%20main.png)
+
+---
+
+## Part 2 - Simulating Tom and Jerrys work
+
