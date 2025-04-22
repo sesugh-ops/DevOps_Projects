@@ -28,24 +28,30 @@
 ## Part 2 - Simulating Toms work
 
 1. Checking if branch is only main
+
 ![branch check](./images/checking%20first%20branch.png)
 
 2. Creating a branch for Toms work
 ![create](./images/switch-to-branch-update.png)
 
 3. Confrim creation of branch for Tom
+
 ![confirm](./images/confirm-update-branch.png)
 
 4. Add content to index.html on Toms branch
+
 ![add](./images/add-content-on-update.png)
 
 5. Check for unstaged changes on Toms branch
+
 ![check](./images/update-not-staged.png)
 
 6. Stage changes on Tom branch
+
 ![stage](./images/staged-update.png)
 
 7. Push Toms branch with staged changes to remote
+
 ![push](./images/update-pushed.png)
 
 
