@@ -16,7 +16,8 @@
 
 
 4. Changes were committed
-![committed](./images/changes%20commited.png)
+![commited](./images/commited%20changes.png)
+
 
 
 5. Commited changes pushed to github main branch
