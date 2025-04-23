@@ -59,4 +59,34 @@
 
 ## Part 3 - simulating Jerrys work
 
+1. Switch to the main branch
 
+![switch](./images/switch-main1.png)
+
+2. Pull changes from Toms branch
+
+![pull changes](./images/pull-tom-work.png)
+
+3. Create a branch for jerry and switch to the branch
+
+![create](./images/jerry-new-branch.png)
+
+
+4.  Edit index html file and add a contact info for jerry
+
+![add](./images/index-jerry-html.png)
+
+
+5.  Stage changes for jerry work
+
+![stage](./images/jerry-staged.png)
+
+
+6.  Commit Jerrys work
+
+![new](./images/jerry-commit.png)
+
+
+7. Push Jerrys branch to the origin
+
+![push](./images/jerry-push-branch.png)
