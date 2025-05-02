@@ -36,4 +36,31 @@
 ![after](./images/jerry-status-after.png)
 
 
-4. 
+4. Add jerry changes
+
+![add](./images/jerry-add-changes.png)
+
+
+5. Commit jerry changes
+
+![commit](./images/jerry-commit.png)
+
+
+6. Push jerry changes to jerry origin
+
+![push](./images/jerry-push-origin.png)
+
+
+7. Review jerry changes for pull request
+
+![review](./images/jerry-review-pull.png)
+
+
+8. Create pull request for jerry
+
+![pull](./images/jerry-pullrequest.png)
+
+
+9. Merge jerry pull request
+
+![merge](./images/jerry-merged.png)
