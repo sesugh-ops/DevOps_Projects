@@ -1,0 +1,39 @@
+# **TOM AND JERRY PULL REQUEST AND MERGING**
+
+## part one - Tom pull request and merging simulation
+
+1. Navigated to Github repository and created a pull request for Tom
+
+![pull](./images/tom-review.png)
+
+
+2. Pull requested initiated for Toms branch
+
+![pull](./images/tom-pull-request.png)
+
+
+3. Pull Request merged for Tom
+![merged](./images/merge-success.png)
+
+
+---
+
+
+## part two - Jerry pull request and simulation
+
+1. Switched to Jerry branch
+
+![switch](./images/switch-jerry.png)
+
+
+2. Pull changes from main branch
+
+![pull](./images/jerry-pull-changes-main.png)
+
+
+3. Jerry status after pulling main branch changes
+
+![after](./images/jerry-status-after.png)
+
+
+4. 
