@@ -28,6 +28,55 @@
 
 
 
+## part two - Morgans work review
+
+1. Created a branch for Morgan and switched to the branch
+
+![create](./images/morgan-branch.png)
+
+2. Created a file for Morgan branch called book review
+
+![file](./images/book-review-file.png)
+
+
+
+3. Added content to the new file
+
+![content](./images/book-review-content.png)
+
+
+4. stage Files
+
+![stage](./images/book-review-stage.png)
+
+
+
+
+5. Commit changes 
+
+![commit](./images/book-review-commit.png)
+
+
+6. Push branch to repository
+
+![push branch](./images/book-reviews-push.png)
+
+
+7. Create Pull request for Morgan branch
+
+![pull](./images/book-review-pull.png)
+
+
+8. Merge branch to main
+
+![merge](./images/book-review-merged.png)
+
+
+
+
+
+
+
 
 
 
