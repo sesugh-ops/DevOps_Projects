@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update events</title>
+</head>
+<body>
+    <div class="events-admin-container">
+        <h2>Manage Library Events</h2>
+        <p class="admin-subtitle">Add, edit, or remove upcoming events</p>
+        
+        <div class="admin-actions">
+            <button class="action-btn primary-btn" id="addEventBtn">+ Add New Event</button>
+            <div class="search-box">
+                <input type="text" placeholder="Search events...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        
+        <div class="events-table">
+            <div class="table-header">
+                <div class="col">Event Title</div>
+                <div class="col">Date & Time</div>
+                <div class="col">Location</div>
+                <div class="col">Status</div>
+                <div class="col actions">Actions</div>
+            </div>
+            
+            <div class="table-row">
+                <div class="col">Summer Reading Kickoff</div>
+                <div class="col">Jun 15, 2024 • 10:00 AM</div>
+                <div class="col">Children's Section</div>
+                <div class="col"><span class="status active">Active</span></div>
+                <div class="col actions">
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="col">Author Talk: Jane Smith</div>
+                <div class="col">Jun 22, 2024 • 6:30 PM</div>
+                <div class="col">Main Hall</div>
+                <div class="col"><span class="status active">Active</span></div>
+                <div class="col actions">
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="col">Teen Book Club</div>
+                <div class="col">Jul 5, 2024 • 4:00 PM</div>
+                <div class="col">Conference Room B</div>
+                <div class="col"><span class="status draft">Draft</span></div>
+                <div class="col actions">
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Event Modal (hidden by default) -->
+        <div class="modal" id="eventModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modalTitle">Add New Event</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Event Title</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Status</label>
+                        <select>
+                            <option>Active</option>
+                            <option>Draft</option>
+                            <option>Canceled</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Save Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .events-admin-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .admin-subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .admin-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .search-box {
+            display: flex;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .search-box input {
+            border: none;
+            padding: 0.5rem;
+            min-width: 250px;
+        }
+        .search-btn {
+            border: none;
+            background: #f5f5f5;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+        .action-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background: white;
+        }
+        .primary-btn {
+            background: #2e7d32;
+            color: white;
+            border: none;
+        }
+        .edit-btn {
+            background: #2196F3;
+            color: white;
+            border: none;
+        }
+        .delete-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            margin-left: 0.5rem;
+        }
+        .events-table {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .table-header, .table-row {
+            display: flex;
+            padding: 1rem;
+        }
+        .table-header {
+            background: #f5f5f5;
+            font-weight: bold;
+        }
+        .table-row {
+            border-bottom: 1px solid #eee;
+        }
+        .table-row:last-child {
+            border-bottom: none;
+        }
+        .col {
+            flex: 1;
+            padding: 0 0.5rem;
+        }
+        .col.actions {
+            flex: 0.5;
+            display: flex;
+        }
+        .status {
+            padding: 0.3rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+        .status.active {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        .status.draft {
+            background: #fff8e1;
+            color: #ff8f00;
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .cancel-btn {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+        .save-btn {
+            background: #2e7d32;
+            color: white;
+            border: none;
+        }
+    </style>
+    
+    <script>
+        // Simple modal toggle functionality
+        document.getElementById('addEventBtn').addEventListener('click', function() {
+            document.getElementById('eventModal').style.display = 'flex';
+            document.getElementById('modalTitle').textContent = 'Add New Event';
+        });
+        
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.getElementById('eventModal').style.display = 'none';
+        });
+        
+        document.querySelector('.cancel-btn').addEventListener('click', function() {
+            document.getElementById('eventModal').style.display = 'none';
+        });
+        
+        // In a real implementation, you would add more JavaScript for:
+        // - Editing existing events
+        // - Form validation
+        // - Saving to database
+        // - Deleting events with confirmation
+    </script>
+</body>
+</html>
