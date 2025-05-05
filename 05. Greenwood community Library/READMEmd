@@ -72,6 +72,47 @@
 ![merge](./images/book-review-merged.png)
 
 
+## part three - Jamie's work review
+
+1. Created a branch for jamie and switched to the branch
+
+![create](./images/update-events-branch.png)
+
+2. Created a file for the branch called update events
+
+![create](./images/update-events-file.png)
+
+
+3. Added files to the new file
+
+![add](./images/update-events-content.png)
+
+
+4. Stage files to commit 
+
+![stage](./images/update-events-stage.png)
+
+
+5. Commit files to branch
+
+![commit](./images/update-events-commit.png)
+
+
+6. Push branch with files to remote
+
+![push](./images/update-events-push.png)
+
+
+7. Create a pull request 
+
+![pull](./images/update-events-pull.png)
+
+
+8. Merge files to main
+
+![merge](./images/update-events-merge.png)
+
+
 
 
 
