@@ -1,6 +1,6 @@
 # **GREENWOOD COMMUNITY LIBRARY**
 
-*This website entails about enhancing a community library*
+*This website entails about enhancing a community library website workflow and a collaboration between two developers Morgan and jamie*
 
 
 ## part one - creating various pages for the main branch
@@ -8,6 +8,17 @@
 1. Created various pages and added content
 
 ![create](./images/first-content.png)
+
+
+2. This are the various page and the visual representation of their code content
+
+![home](./images/home%20page.png)
+
+![contact](./images/contact%20us.png)
+
+![about](./images/about%20us.png)
+
+
 
 
 
