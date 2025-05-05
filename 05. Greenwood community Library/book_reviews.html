@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+</head>
+<body>
+    <div class="reviews-container">
+        <h2>Book Reviews & Recommendations</h2>
+        <p class="subtitle">Discover what our librarians and community are reading</p>
+        
+        <div class="review-filters">
+            <button class="filter-btn active">All Genres</button>
+            <button class="filter-btn">Fiction</button>
+            <button class="filter-btn">Non-Fiction</button>
+            <button class="filter-btn">Children's</button>
+            <button class="filter-btn">Mystery</button>
+        </div>
+        
+        <div class="review-list">
+            <div class="review-card">
+                <div class="book-cover" style="background-color: #8d6e63;"></div>
+                <div class="review-content">
+                    <h3>The Midnight Library</h3>
+                    <p class="book-author">by Matt Haig</p>
+                    <div class="rating">★★★★☆</div>
+                    <p class="review-text">"A thought-provoking exploration of life's choices and regrets. Nora's journey through alternate lives will stay with you long after the last page."</p>
+                    <p class="reviewer">- Sarah J., Head Librarian</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="book-cover" style="background-color: #6d4c41;"></div>
+                <div class="review-content">
+                    <h3>Braiding Sweetgrass</h3>
+                    <p class="book-author">by Robin Wall Kimmerer</p>
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"A beautiful blend of indigenous wisdom and scientific knowledge. This book changed how I see our relationship with nature."</p>
+                    <p class="reviewer">- Michael T., Patron</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="book-cover" style="background-color: #a1887f;"></div>
+                <div class="review-content">
+                    <h3>The Thursday Murder Club</h3>
+                    <p class="book-author">by Richard Osman</p>
+                    <div class="rating">★★★☆☆</div>
+                    <p class="review-text">"A delightful cozy mystery with charming elderly protagonists. Perfect for fans of character-driven whodunits."</p>
+                    <p class="reviewer">- Emily R., Assistant Librarian</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="submit-review">
+            <h3>Share Your Review</h3>
+            <p>Read something wonderful lately? We'd love to hear about it!</p>
+            <button class="submit-btn">Submit a Review</button>
+        </div>
+    </div>
+    
+    <style>
+        .reviews-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .review-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+        .filter-btn {
+            background: #e0e0e0;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .filter-btn.active {
+            background: #2e7d32;
+            color: white;
+        }
+        .review-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .review-card {
+            display: flex;
+            gap: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+        .book-cover {
+            min-width: 100px;
+            height: 150px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .review-content {
+            flex: 1;
+        }
+        .book-author {
+            color: #666;
+            margin: 0.3rem 0;
+        }
+        .rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .review-text {
+            line-height: 1.6;
+            margin: 0.8rem 0;
+        }
+        .reviewer {
+            font-style: italic;
+            color: #666;
+            text-align: right;
+        }
+        .submit-review {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .submit-btn {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    </style>
+</body>
+</html>
