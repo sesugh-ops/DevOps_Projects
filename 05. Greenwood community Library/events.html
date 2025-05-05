@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div class="events-container">
+        <h2>Upcoming Events</h2>
+        
+        <div class="event-list">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">Jun</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Reading Kickoff</h3>
+                    <p class="event-time">10:00 AM - Children's Section</p>
+                    <p>Join us for stories, crafts, and sign up for our summer reading challenge!</p>
+                    <a href="#" class="event-btn">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">Jun</span>
+                </div>
+                <div class="event-details">
+                    <h3>Author Talk: Jane Smith</h3>
+                    <p class="event-time">6:30 PM - Main Hall</p>
+                    <p>Local author discusses her new novel "The Greenwood Chronicles".</p>
+                    <a href="#" class="event-btn">RSVP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .events-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .event-list {
+            margin-top: 2rem;
+        }
+        .event-card {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+        .event-date {
+            background: #2e7d32;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            min-width: 70px;
+        }
+        .day {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: block;
+        }
+        .event-details {
+            flex: 1;
+        }
+        .event-time {
+            color: #666;
+            font-style: italic;
+            margin: 0.3rem 0;
+        }
+        .event-btn {
+            display: inline-block;
+            background: #2e7d32;
+            color: white;
+            padding: 0.3rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+    </style>
+</body>
+</html>
